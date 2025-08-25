@@ -1,7 +1,7 @@
 # Engineering @Fundment - Take Home
 
 Welcome to the Fundment take-home exercise for a backend developer
-position! This exercise is designed to see how you can translate 
+position! This exercise is designed to see how you can translate
 problem statements into working software and the design choices you
 take to get there and make your software maintainable and extensible.
 
@@ -17,7 +17,7 @@ Complete the following steps in order, building upon each previous implementatio
 ### Step 1: Simple ISA (Non-Flexible)
 Implement the calculator for a simple ISA (non-flexible) to get the remaining ISA allowance.
 
-- **Key Rules**: 
+- **Key Rules**:
   - Annual limit: £20,000 (2024/25 tax year)
   - Once withdrawn, contribution allowance is lost permanently
   - Calculate remaining allowance based on total contributions in tax year
@@ -26,7 +26,7 @@ Implement the calculator for a simple ISA (non-flexible) to get the remaining IS
 Implement the calculator for a simple ISA (flexible) to get the remaining ISA allowance.
 
 - **Key Rules**:
-  - Annual limit: £20,000 (2024/25 tax year)  
+  - Annual limit: £20,000 (2024/25 tax year)
   - Withdrawals restore contribution allowance (can re-contribute withdrawn amounts)
   - Track net contributions vs. allowable contributions including restored amounts
 
@@ -66,10 +66,16 @@ Implement injecting custom ISA limits for your particular account - how does tha
 
 ## Getting Started
 
+### Development
+
+1. We've provided some base reference packages, see `requirements.txt`. We expect a Python version of >= 3.10
+
+### Exploring
+
 1. Review the existing code structure in `src/schema/isa_allowance.py` for data models
-2. Implement your solution in `src/service/isa_allowance.py` 
+2. Implement your solution in `src/service/isa_allowance.py`
 3. The `calculate_isa_allowance_for_account()` function is your main entry point
-4. Add comprehensive tests in the `tests/` directory
+4. Add comprehensive tests in the `src/tests/` directory
 5. Consider edge cases and error handling throughout your implementation
 
 ## Design Considerations

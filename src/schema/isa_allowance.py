@@ -29,10 +29,6 @@ class Account(BaseModel):
     account_type: AccountType
     transactions: List[Transaction] = Field(default_factory=list)
 
-class TotalLimit(BaseModel):
-    tax_year: str
-    total_limit: Decimal
-
 class IsaAllowance(BaseModel):
     annual_allowance: Decimal
     remaining_allowance: Decimal
